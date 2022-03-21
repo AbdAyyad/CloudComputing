@@ -44,7 +44,7 @@ with open("input.txt") as inputFile:
         html_content = []
         nodes = [site]
         with Pool() as p:
-            while len(nodes) > 0 and number_of_iterations < 5:
+            while len(nodes) > 0 and number_of_iterations <= 5:
                 print("***************************")
                 print(f'number of iterations: {number_of_iterations} number of nodes: {len(nodes)} number of text files {len(html_content)}')
                 sys.stdout.flush()
